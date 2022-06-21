@@ -26,7 +26,7 @@
 ## What we learned
 
 
-## 🔮 What's next for Space Club
+## What's next for Boxweb
 
 
 
