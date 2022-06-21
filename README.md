@@ -5,7 +5,7 @@
 
 ##  Tech Stack
 
-- Next
+- React
 - Truffle
 - GraphQL
 - Solidity
