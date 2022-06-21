@@ -1,4 +1,4 @@
-<h1 align="center">Space Club</h1>
+<h1 align="center">Boxweb</h1>
 
 ![](./assets/preview.png)
 
