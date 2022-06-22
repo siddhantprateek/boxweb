@@ -1,0 +1,53 @@
+.nft-card {
+    width: 20rem;
+    padding: 1rem;
+    border: 2px solid rgb(179, 179, 179);
+    transition: all .2s;
+}
+.nft-card:hover {
+    border: 2px solid black;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 0;
+    align-items: center;
+}
+.artist-logo {
+    height: 2rem;
+    width: 1.8rem;
+    border-radius: 5px;
+}
+.nft-img {
+    width: 100%;
+}
+
+.card-status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bid-details {
+    text-align: right;
+}
+
+.place-bid {
+    width: 100%;
+    margin-top: .5rem;
+    padding: .5rem 0;
+    border: 2px solid black;
+    outline: none;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+    /* background-color: black; */
+}
+
+.place-bid:hover {
+    background-color: black;
+    color: white;
+}
