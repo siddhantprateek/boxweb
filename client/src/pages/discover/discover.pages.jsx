@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Explorecard } from "../../components";
 
 const Discover = () => {
   return (
-    <div>Discover</div>
-  )
-}
+    <div>
+      <Explorecard />
+    </div>
+  );
+};
 
-export default Discover
+export default Discover;
