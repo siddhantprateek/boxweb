@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.use('/routes', userRouter)
+app.use('/nft', userRouter)
 
 //database connection
 mongoose.connect(process.env.DATABASE_URL)
