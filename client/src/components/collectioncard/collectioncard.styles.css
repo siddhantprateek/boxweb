@@ -1,0 +1,23 @@
+.upperdiv img {
+    height: 10rem;
+    width: 100%;
+}
+
+.box-container {
+    text-align: center;
+    align-items: center;
+    width: 20rem;
+    border: 2px solid black;
+}
+
+.circle-img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5rem;
+    border: 5px solid white;
+}
+
+.artist-content {
+    position: relative;
+    margin-top: -3rem;
+}
