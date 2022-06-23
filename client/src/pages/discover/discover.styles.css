@@ -3,23 +3,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .greenbox {
-    background-color: greenyellow;
+    background-color: #CCFF3C;
     height: 3rem;
-    width: 7rem;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    margin-top: 3rem;
-    position: relative;
-    margin-left: -6rem;
+    width: 8rem;
+    margin-top: 2.5rem;
+    margin-left: -6.5rem;
     z-index: -2;
 }
 
-.head-dis h1 {
+.head-dis h2 {
     font-size: 4rem;
 }
 
@@ -27,7 +23,6 @@
     display: flex;
     flex-wrap: nowrap;
     list-style: none;
-    margin-left: 1rem;
     font-size: 2rem;
     font-weight: 600;
 }
