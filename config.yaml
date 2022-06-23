@@ -1,0 +1,4 @@
+configurationset:
+  - configuration:
+      name: curl_import_config
+      authentication_0fc23ef878: lewisburg::stepzen.net+1000::d04cbb85bd4e2900f368e62b31ccc51306f0acb560a8c751e005a079b7cf65d5
