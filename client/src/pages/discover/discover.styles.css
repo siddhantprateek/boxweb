@@ -1,0 +1,41 @@
+.head-dis {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.greenbox {
+    background-color: greenyellow;
+    height: 3rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin-top: 3rem;
+    position: relative;
+    margin-left: -6rem;
+    z-index: -2;
+}
+
+.head-dis h1 {
+    font-size: 4rem;
+}
+
+.nav-dis {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.nav-dis li {
+    margin-top: 2rem;
+    padding-top: 3rem;
+    margin: 0 4rem;
+    cursor: pointer;
+    justify-content: center;
+}
