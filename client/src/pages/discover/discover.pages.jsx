@@ -6,7 +6,7 @@ const Discover = () => {
   return (
     <div className="discover-container">
       <div className="head-dis">
-        <h1>EXPLORE</h1>
+        <h2>EXPLORE</h2>
         <div className="greenbox"></div>
       </div>
 
