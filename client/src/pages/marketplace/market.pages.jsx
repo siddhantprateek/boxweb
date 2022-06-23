@@ -47,7 +47,6 @@ const Market = () => {
           {[...Array(20)].map((key) => (<NftCard key={key} />))}
         </div>
       </div>
-    
     </div>
   );
 };

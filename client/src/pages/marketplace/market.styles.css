@@ -73,3 +73,15 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media only screen and (min-width: 1200px) {
+    .nft-collections-display {
+        width: 80rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .collection-header-details  {
+        margin-top: -1rem;
+    }
+}
