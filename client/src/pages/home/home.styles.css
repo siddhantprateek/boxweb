@@ -1,0 +1,38 @@
+.home-bg {
+    position: relative;
+}
+
+.oval-1 {
+    position: fixed;
+    z-index: -2;
+    height: 40rem;
+    width: 60rem;
+    right: -40rem;
+    top: 0;
+    transform: rotate(45deg);
+    border-radius: 20rem;
+    border: 2px solid rgba(124, 124, 124, 0.363);
+}
+
+.oval-2 {
+    position: fixed;
+    z-index: -2;
+    height: 40rem;
+    width: 70rem;
+    right: -40rem;
+    top: 0;
+    transform: rotate(25deg);
+    border-radius: 20rem;
+    border: 2px solid rgba(124, 124, 124, 0.363);
+}
+.oval-3 {
+    position: fixed;
+    z-index: -2;
+    height: 40rem;
+    width: 85rem;
+    right: -40rem;
+    top: 0;
+    transform: rotate(10deg);
+    border-radius: 20rem;
+    border: 2px solid rgba(124, 124, 124, 0.363);
+}
