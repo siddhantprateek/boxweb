@@ -1,5 +1,5 @@
 import React from "react";
-import Marketplacecard from "../../components/marketplacecard/marketplacecard.components";
+// import Marketplacecard from "../../components/marketplacecard/marketplacecard.components";
 // <Marketplacecard />
 import { NftCard } from "../../components";
 import './market.styles.css'
