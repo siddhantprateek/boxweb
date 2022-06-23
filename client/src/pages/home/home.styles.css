@@ -36,3 +36,55 @@
     border-radius: 20rem;
     border: 2px solid rgba(124, 124, 124, 0.363);
 }
+.home-head-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.home-content h1{
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.head-bold {
+    font-weight: 800;
+}
+
+.green-highlight {
+    background-color: rgb(50, 243, 50);
+    position: relative;
+    float: right;
+    z-index: -1;
+    margin-right: 5rem;
+    margin-top: -3rem;
+    /* margin-top: 2rem; */
+    height: 3rem;
+    width: 8rem;
+}
+.tilted-cards {
+    position: relative;
+}
+
+.nft-head-card {
+    /* transform: rotate(10deg); */
+    position: relative;
+    margin-left: -1rem;
+    transition: all 1s;
+}
+
+.nft-head-card-2 {
+    position: relative;
+    margin-top: -26rem;
+    transition: all 1s;
+}
+
+.nft-head-card-2:hover {
+    transform: rotate(10deg);
+}
