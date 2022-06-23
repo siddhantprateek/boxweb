@@ -3,6 +3,16 @@ import "./discover.styles.css";
 import { Explorecard } from "../../components";
 
 const Discover = () => {
+
+  const TAGS = [
+    "Trending",
+    "Top",
+    "Art",
+    "Collectibles",
+    "Domain Name",
+    "Trading",
+    "Virtual Worlds",
+  ]
   return (
     <div className="discover-container">
       <div className="head-dis">
@@ -12,13 +22,7 @@ const Discover = () => {
 
       <div className="header-discover">
         <ul className="nav-dis">
-          <li>Trending</li>
-          <li>Top</li>
-          <li>Art</li>
-          <li>Collectibles</li>
-          <li>Domain Name</li>
-          <li>Trading</li>
-          <li>Virtual Worlds</li>
+          {TAGS.map((tag) => (<li>{tag}</li>))}
         </ul>
       </div>
       <div className="dis-explore">
