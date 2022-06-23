@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Discover, Market } from './pages';
+import { Home, Discover, Market, Nomatch } from './pages';
 import { Route, Routes } from 'react-router-dom';
 import { Header } from './components';
 import './App.css';
@@ -15,6 +15,7 @@ function App() {
         <Route path='collections'>
           <Route path='hape_prime' element={<Market/>}/>
         </Route>
+        <Route path='/*' element={<Nomatch/>} />
       </Routes>
     </div>
   );
