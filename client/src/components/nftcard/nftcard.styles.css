@@ -3,6 +3,8 @@
     padding: 1rem;
     border: 2px solid rgb(179, 179, 179);
     transition: all .2s;
+    margin-inline-end: 2rem;
+    margin-block-start: 2rem;
 }
 .nft-card:hover {
     border: 2px solid black;

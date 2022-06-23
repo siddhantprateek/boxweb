@@ -8,7 +8,7 @@ const Collectioncard = ({
   collection_desp,
 }) => {
   return (
-    <div className="box-container">
+    <div className="explore-box-container">
       <div className="upperdiv">
         <img src={bannerurl} alt="" />
       </div>

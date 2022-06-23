@@ -3,12 +3,14 @@
     width: 100%;
 }
 
-.box-container {
+.explore-box-container {
     text-align: center;
     align-items: center;
-    width: 20rem;
+    width: 30rem;
     border: 2px solid black;
-    margin: 4rem;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
 }
 
 .circle-img {

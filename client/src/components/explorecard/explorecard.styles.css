@@ -1,5 +1,10 @@
 .box-explore {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.explorecard-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
