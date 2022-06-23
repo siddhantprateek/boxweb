@@ -1,0 +1,75 @@
+.collections-page {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.collection-banner {
+    height: 20rem;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.collection-header-details {
+    padding: 0 4rem;
+    position: relative;
+    margin-top: -4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.collection-pro-image {
+    border: 6px solid white;
+    border-radius: 10px;
+    filter: drop-shadow(0px 11px 26px rgba(0, 0, 0, 0.25));
+}
+
+.collection-grp-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.collect-follow-me {
+    width: 10rem;
+    margin: 0 1rem;
+    padding: .5rem 0;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: transparent;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    transition: all .4s;
+}
+
+.collect-follow-me:hover {
+    background-color: black;
+    color: white;
+}
+
+.collection-status {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.collection-status * {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.nft-collections-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
