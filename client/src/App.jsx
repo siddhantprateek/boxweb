@@ -12,6 +12,9 @@ function App() {
         <Route index element={<Home />} />
         <Route path='discover' element={<Discover />} />
         <Route path='marketplace' element={<Market />} />
+        <Route path='collections'>
+          <Route path='hape_prime' element={<Market/>}/>
+        </Route>
       </Routes>
     </div>
   );
