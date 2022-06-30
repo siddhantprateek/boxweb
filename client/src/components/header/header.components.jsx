@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAddress, useDisconnect, useMetamask } from '@thirdweb-dev/react';
 import "./header.styles.css";
 
 const Header = () => {
+  const address = useAddress()
+  const connectWithMetamask = useMetamask()
+  const disconnectWallet = useDisconnect()
   return (
     <header className="header">
       {/* logo */}
@@ -26,7 +30,18 @@ const Header = () => {
         </ul>
       </div>
       {/* connect wallet */}
-      <button className="connect-wlt">Connect Wallet</button>
+      {
+        !address ? (
+          <div>
+            <button onClick={connectWithMetamask} className="connect-wlt">Connect Wallet</button>
+          </div>
+        ) : (
+          <div className="disconnect-btn">
+            <div className="connect-address">{address.slice(1, 8)}...</div>
+            <button onClick={disconnectWallet} className="connect-wlt">Disconnect</button>
+          </div>
+        )
+      }
     </header>
   );
 };

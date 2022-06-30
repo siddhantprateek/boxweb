@@ -45,3 +45,13 @@
     border: none;
     cursor: pointer;
 }
+
+.connect-address {
+    padding: .5rem 1rem;
+    font-weight: 700;
+}
+
+.disconnect-btn {
+    
+    display: flex;
+}
