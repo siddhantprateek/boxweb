@@ -2,16 +2,20 @@ const express = require('express')
 const dotenv = require('dotenv')
 const userRouter = require('./routes/routes') 
 const mongoose = require('mongoose')
-const app = express()
-const port = process.env.port || 4000
+const path = require("path")
 
+// configuration
+const app = express()
+const PORT = process.env.PORT || 4000
 dotenv.config()
 
+// routes
+app.use(express.static(path.join(__dirname, "./client/build")))
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(path.join(__dirname, './client/build', 'index.html'))
 })
 
-app.use('/nft', userRouter)
+// app.use('/nft', userRouter)
 
 //database connection
 mongoose.connect(process.env.DATABASE_URL)
@@ -20,6 +24,6 @@ db.once('open', () => {
     console.log('Database is Connected')
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+app.listen(PORT, () => {
+  console.log(`server running at http://localhost:${PORT}`)
 })
