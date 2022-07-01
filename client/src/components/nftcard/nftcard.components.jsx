@@ -8,23 +8,28 @@ import "./nftcard.styles.css";
 //     current_bid: Number
 // }
 
-const Nftcard = () => {
-    const [ showbid, setShowBid ] = useState(false);
+const Nftcard = ({name, image}) => {
+  const [showbid, setShowBid] = useState(false);
 
-    const bidBtnClassName = showbid ? "display-block" : "display-none";
-    return (
-    <div className="nft-card" onMouseEnter={() => setShowBid(true)} onMouseLeave={() => setShowBid(false)}>
+
+  const bidBtnClassName = showbid ? "display-block" : "display-none";
+  return (
+    <div
+      className="nft-card"
+      onMouseEnter={() => setShowBid(true)}
+      onMouseLeave={() => setShowBid(false)}
+    >
       <div className="card-header">
         <img
           className="artist-logo"
           src={`https://img-ae.seadn.io/https%3A%2F%2Flh3.googleusercontent.com%2F5VAunHscTO5Nt8WgCezb0i2oVskplFVhVgwmvISfiWQlrBulCxUL7zCYUkRfVF04_47QmNlpWqqdfVraThlhLBEZjuWzajmYDYc9vOc%3Ds10000?fit=max&h=120&w=120&auto=format&s=55ddc79f3fd66e42a81810c55ab76079`}
           alt=""
         />
-        <p>@Hape</p>
+        <p>{name ? name : "@Hape"}</p>
       </div>
       <img
         className="nft-img"
-        src={`https://img.seadn.io/files/fb49368ae9e8b3d903d129df4ee3c45b.png?fit=max`}
+        src={image ? image : `https://img.seadn.io/files/fb49368ae9e8b3d903d129df4ee3c45b.png?fit=max`}
         alt=""
       />
       <div className="card-status">

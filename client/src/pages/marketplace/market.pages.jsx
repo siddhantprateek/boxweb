@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import Marketplacecard from "../../components/marketplacecard/marketplacecard.components";
 // <Marketplacecard />
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 import { NftCard } from "../../components";
 import './market.styles.css'
 const Market = () => {
+  const [ nftdata, setNfts ] = useState([])
+
+  useEffect(() => {
+    const sdk = new ThirdwebSDK("rinkeby");
+    const contract = sdk.getNFTCollection("0xe725eF2e88266Acd6e275ABE1Fa217772868e16f")
+
+    const fetch_nfts = async () => {
+      const nfts = await contract.getAll()
+      setNfts(nfts)
+      console.log(nfts)
+    }
+    fetch_nfts();
+
+  }, [])
+
+
   return (
     <div className="collections-page">
       <div className="collection-banner-header">
@@ -44,7 +61,11 @@ const Market = () => {
       </div>
       <div className="nft-collections-display">
         <div className="collection-list">
-          {[...Array(20)].map((key) => (<NftCard key={key} />))}
+        {
+          nftdata.map((data) => <NftCard image={data.metadata.image} name={data.metadata.name}  />)
+        }
+        
+
         </div>
       </div>
     </div>
