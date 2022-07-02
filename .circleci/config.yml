@@ -11,7 +11,7 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run:
-          command: npm heroku-prebuild
+          command: npm run heroku-prebuild
           name: Build app
       - persist_to_workspace:
           root: ~/project
