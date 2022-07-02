@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Discover, Market, Nomatch } from './pages';
+import { Home, Discover, Market, Nomatch, Collections } from './pages';
 import { Route, Routes } from 'react-router-dom';
 import { Header } from './components';
 import './App.css';
@@ -13,6 +13,7 @@ function App() {
         <Route path='discover' element={<Discover />} />
         <Route path='marketplace' element={<Market />} />
         <Route path='collections'>
+          <Route index element={<Collections/>} />
           <Route path='hape_prime' element={<Market/>}/>
         </Route>
         <Route path='/*' element={<Nomatch/>} />
