@@ -4,15 +4,12 @@ orbs:
   heroku: circleci/heroku@1.2.6
 
 jobs:
-  build_and_test:
+  build:
     executor: node/default
     steps:
       - checkout
       - node/install-packages:
           pkg-manager: npm
-      - run:
-          command: npm test
-          name: Run tests
       - run:
           command: npm heroku-prebuild
           name: Build app
@@ -32,10 +29,10 @@ jobs:
 workflows:
   test_my_app:
     jobs:
-      - build_and_test
+      - build
       - deploy:
           requires:
-            - build_and_test 
+            - build 
           filters:
             branches:
               only: master
