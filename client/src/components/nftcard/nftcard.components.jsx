@@ -9,15 +9,13 @@ import "./nftcard.styles.css";
 // }
 
 const Nftcard = ({name, image}) => {
-  const [showbid, setShowBid] = useState(false);
+  // const [showbid, setShowBid] = useState(false);
 
 
-  const bidBtnClassName = showbid ? "display-block" : "display-none";
+  // const bidBtnClassName = showbid ? "display-block" : "display-none";
   return (
     <div
       className="nft-card"
-      onMouseEnter={() => setShowBid(true)}
-      onMouseLeave={() => setShowBid(false)}
     >
       <div className="card-header">
         <img
@@ -42,7 +40,7 @@ const Nftcard = ({name, image}) => {
           <p>Highest Bid</p>
         </div>
       </div>
-      <button className={`place-bid ${bidBtnClassName}`}>Place a bid</button>
+      <button className="place-bid display-block">Place a bid</button>
     </div>
   );
 };
