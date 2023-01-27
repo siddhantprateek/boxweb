@@ -5,32 +5,18 @@
 
 ##  Tech Stack
 
-- React
+- React _Typescript_
 - Truffle
 - GraphQL
 - Solidity
-- NodeJs and ExpressJs
-- DynamoDB
+- Go/Golang
+- MongoDB
 
 
 ## Inspiration 
 
-## What it does 
 
-## How we built it 
-
-## Challenges we ran into
-
-## Accomplishments that we're proud of
-
-## What we learned
-
-
-## What's next for Boxweb
-
-
-
-### Truffle
+### Setting up dev-environment
 
 Starting init...
 
@@ -49,4 +35,3 @@ http://trufflesuite.com/docs
 
 - [Barat Nikhita](https://github.com/nikhitaBarat/)
 - [Siddhant Prateek](https://github.com/siddhantprateek)
-- [Suvangi Paul](https://github.com/suvangipaul)

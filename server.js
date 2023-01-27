@@ -1,9 +1,9 @@
-const express = require('express')
-const dotenv = require('dotenv')
-const userRouter = require('./routes/routes') 
-const mongoose = require('mongoose')
-const path = require("path")
-const cors = require("cors")
+const express = require('express');
+const dotenv = require('dotenv');
+const userRouter = require('./routes/routes'); 
+const mongoose = require('mongoose');
+const path = require("path");
+const cors = require("cors");
 
 // configuration
 const app = express()
@@ -24,11 +24,15 @@ app.get('/', (req, res) => {
 // app.use('/nft', userRouter)
 
 //database connection
-mongoose.connect(process.env.DATABASE_URL)
-const db = mongoose.connection
-db.once('open', () => {
-    console.log('Database is Connected')
-})
+const ConnectMongoDB = () =>{
+  mongoose.connect(process.env.DATABASE_URL)
+  const db = mongoose.connection
+  db.once('open', () => {
+      console.log('Database is Connected')
+  })
+}
+
+ConnectMongoDB()
 
 app.listen(PORT, () => {
   console.log(`server running at http://localhost:${PORT}`)

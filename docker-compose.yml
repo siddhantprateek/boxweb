@@ -10,3 +10,10 @@ services:
       NODE_ENV: production
     ports:
       - 4000:4000
+  boxweb-client:
+    image: boxweb-client
+    build:
+      context: /web
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
