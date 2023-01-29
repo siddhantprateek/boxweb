@@ -1,0 +1,1 @@
+export { default as Collectioncard } from "./collectioncard/collectioncard.components";

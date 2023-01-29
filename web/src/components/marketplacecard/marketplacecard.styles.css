@@ -1,0 +1,79 @@
+.marketcard-contain {
+    display: flex;
+}
+
+.marketcard {
+    padding: 4rem;
+}
+
+.market-content {
+    padding: 0 5rem;
+    margin-top: 6rem;
+    display: flex;
+    width: 50rem;
+}
+
+.market-content h1 {
+    font-weight: 300;
+    margin: 0 2rem;
+}
+
+.market-logo {
+    border-radius: 1rem;
+    border: 3px solid black;
+    height: 5rem;
+}
+
+.marketcard img {
+    height: 40rem;
+    width: 30rem;
+    border: 5px solid black;
+    border-radius: 2rem;
+}
+
+.mark-desp {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.mark-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.markdownside-cont {
+    margin-bottom: 4rem;
+}
+
+.markdownside-cont h1 {
+    font-size: 3rem;
+}
+
+.markdownside-cont span {
+    color: grey;
+    font-size: 1rem;
+}
+
+.markdownside-cont h3 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.btn-mark {
+    background-color: rgb(67, 231, 162);
+    border-radius: 2px;
+    font-size: 1.05rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    width: 20rem;
+    transition: all .5s;
+}
+
+.btn-mark:hover {
+    transform: scale(1.04);
+}
+
+.btn-mark:active {
+    transform: scale(0.9);
+}
