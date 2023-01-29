@@ -2,6 +2,7 @@ package database
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"os"
 
@@ -24,6 +25,7 @@ func ConnectionMongoDB() {
 	if err != nil {
 		panic(err)
 	}
+	fmt.Println("Database is connected")
 
 	col = client.Database("nftdb").Collection("nftdata")
 
