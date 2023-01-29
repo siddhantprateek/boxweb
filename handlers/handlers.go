@@ -2,24 +2,33 @@ package handler
 
 import (
 	"encoding/json"
+	"math/big"
+	"net/http"
+	"strconv"
 
 	"github.com/gofiber/fiber/v2"
-	database "github.com/siddhantprateek/boxweb/database"
+	connect "github.com/siddhantprateek/boxweb/internal"
+	authpkg "github.com/siddhantprateek/boxweb/pkg"
 )
 
-func AppHandler() {
+func DepositAmount(c *fiber.Ctx) error {
+	amount := c.Params("amount")
+	amt, _ := strconv.Atoi(amount)
 
-	router := fiber.New(fiber.Config{
-		JSONEncoder: json.Marshal,
-		JSONDecoder: json.Unmarshal,
-	})
+	// get address of account by which amount to be deposit
+	var v map[string]interface{}
+	err := json.NewDecoder(c.Request().Body).Decode(&v)
+	if err != nil {
+		panic(err)
+	}
 
-	// database connections
-	database.ConnectionMongoDB()
+	client := connect.ConnectNetwork()
+	auth := authpkg.GetAccountAuth(client, v["accountPublicAddress"].(string))
 
-	router.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Server is Healthy...")
-	})
+	reply, err := conn.Deposit(auth, big.NewInt(int64(amt)))
+	if err != nil {
+		return err
+	}
 
-	router.Listen(":8000")
+	return c.JSON(http.StatusOK, reply)
 }

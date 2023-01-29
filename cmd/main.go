@@ -1,9 +1,9 @@
 package main
 
-import handler "github.com/siddhantprateek/boxweb/handlers"
+import router "github.com/siddhantprateek/boxweb/routes"
 
 func main() {
 
 	// Calls Application server
-	handler.AppHandler()
+	router.AppRoute()
 }

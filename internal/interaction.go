@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
-func ConnectNetwork() {
+func ConnectNetwork() *ethclient.Client {
 	// Ganache RPC Server: HTTP://127.0.0.1:7545
 	// you can provide infura mainnet id
 	conn, err := ethclient.Dial("HTTP://127.0.0.1:7545")
@@ -21,4 +21,6 @@ func ConnectNetwork() {
 	if !pending {
 		fmt.Println(tx)
 	}
+
+	return conn
 }

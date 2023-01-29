@@ -11,7 +11,8 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
-func getAccountAuth(client *ethclient.Client, accountAddress string) *bind.TransactOpts {
+// Connect account to make the transaction
+func GetAccountAuth(client *ethclient.Client, accountAddress string) *bind.TransactOpts {
 
 	privateKey, err := crypto.HexToECDSA(accountAddress)
 	if err != nil {
